@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #2c3e50;
+    --white-color: #ecf0f1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container {
+    width: 700px;
+    max-width: 90%;
+
+    margin: 5rem auto 2rem;
+
+    background-color: var(--white-color);
+    color: var(--primary-color);
+
+    border-radius: 1.2rem;
+
+    padding: .8rem 1.5rem;
+}
+
+
+
+header h1 {
+    text-align: center;
+    padding: 1.5rem;
+
+    font-size: 40px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section input {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+
+    padding: .8rem 1.5rem;
+    margin-bottom: 1.2rem;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: 200ms;
+}
+
+section input:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.container_modal {
+    width: 100%;
+    height: 100%;
+
+    color: var(--primary-color);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.container_modal.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    width: 800px;
+    max-width: 95%;
+
+    border-radius: 1.2rem;
+
+    background-color: var(--white-color);
+    
+}
+
+.modal .data_modal {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 70%;
+    margin: auto;
+}
+
+.modal .data_modal h2 {
+    margin: 2rem auto 1rem;
+}
+
+.input_group input[type="number"] {
+    width: 100%;
+}
+
+.input_group{
+    width: 100%;
+    margin-top: .8rem;
+}
+
+.input_group input {
+    margin-top: .4rem;
+
+    font-size: 1.2rem;
+
+    padding: .2rem .5rem;
+}
+
+.modal .buttons {
+    display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+    
+    margin: 0.8rem auto 3rem;
+}
+
+.modal input[type="button"] {
+    display: inline-flex;
+    justify-content: center;
+
+    width: 105px;
+    height: 30px;
+}
+
+.modal p {
+    text-align: center;
+}
+
+.modal .answer {
+    margin-bottom: 2rem;
+}
+
+footer p {
+    text-align: center;
+    color: var(--white-color);
+}
